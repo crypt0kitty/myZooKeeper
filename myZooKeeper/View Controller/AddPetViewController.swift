@@ -26,14 +26,11 @@ class AddPetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         nameTextField.delegate = self
         weightTextField.delegate = self
-       
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
         if UserDefaults.standard.bool(forKey: "isSignedIn") {
             return
         }

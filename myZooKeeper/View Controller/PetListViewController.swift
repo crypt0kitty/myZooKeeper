@@ -14,22 +14,42 @@ class PetListViewController: UIViewController {
     
     @IBOutlet weak var contentPetView: UIView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     var petList = [Pet]()
     var isLoading = false
-    
+    let pullControl = UIRefreshControl()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+
+        pullControl.backgroundColor = UIColor.systemRed
+        pullControl.tintColor = UIColor.white
+        pullControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = pullControl
+        } else {
+            tableView.addSubview(pullControl)
+        }
+        spinner.isHidden = true
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         getPetList()
+    }
     
+    @objc func refresh(_ sender: AnyObject) {
+        self.tableView.reloadData()
+        self.pullControl.endRefreshing()
     }
     
     private func getPetList() {
+        spinner.isHidden = false
+        spinner.startAnimating()
+        
         guard !isLoading else { return }
         isLoading = true
         Firestore.firestore().collection("pet_profiles").getDocuments { [weak self] snapshot, error in
@@ -41,6 +61,8 @@ class PetListViewController: UIViewController {
             }
             DispatchQueue.main.async {
                 strongSelf.handlePetList(snapshot: snapshot)
+                strongSelf.spinner.isHidden = true
+                strongSelf.spinner.stopAnimating()
             }
             
         }

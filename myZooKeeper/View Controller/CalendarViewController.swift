@@ -22,7 +22,9 @@ class CalendarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //pullControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        
+        pullControl.backgroundColor = UIColor.systemRed
+        pullControl.tintColor = UIColor.white
         pullControl.addTarget(self, action: #selector(refreshListData(_:)), for: .valueChanged)
         if #available(iOS 10.0, *) {
             tableView.refreshControl = pullControl
@@ -33,6 +35,7 @@ class CalendarViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         getReminders()
+        
     }
     
     func getReminders() {
@@ -60,7 +63,7 @@ class CalendarViewController: UIViewController {
                     return Reminder(snapshot: snapshot)
                 })
                 strongSelf.reminders.sort { reminderOne, reminderTwo in
-                    reminderOne.reminderDate < reminderTwo.reminderDate
+                    reminderOne.reminderDate > reminderTwo.reminderDate
                 }
                 DispatchQueue.main.async {
                     strongSelf.tableView.reloadData()

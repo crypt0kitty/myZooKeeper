@@ -12,16 +12,34 @@ import FirebaseFirestore
 
 class TasksViewController: UIViewController {
     
-    @IBOutlet weak var tasklist: UITableView!
-    var tasks = [String]()
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet var tasklist: UITableView!
     
+    var tasks = [String]()
+    var pullControl = UIRefreshControl()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Notes"
         
+        pullControl.backgroundColor = UIColor.systemRed
+        pullControl.tintColor = UIColor.white
+        pullControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+        if #available(iOS 10.0, *) {
+            tasklist.refreshControl = pullControl
+        } else {
+            tasklist.addSubview(pullControl)
+        }
+        spinner.isHidden = true
         tasklist.delegate = self
         tasklist.dataSource = self
         updateTasks()
+    }
+    
+    
+    @objc func refresh(_ sender: AnyObject) {
+        self.tasklist.reloadData()
+        self.pullControl.endRefreshing()
     }
     
     func updateTasks() {
@@ -46,27 +64,21 @@ class TasksViewController: UIViewController {
                     DispatchQueue.main.async {
                         self.tasklist.reloadData()
                     }
-                
                 }
-                
             }
-      
     }
-    
     
     @IBAction func didTapAdd() {
         //show another view controller to make an entry
         let vc = storyboard?.instantiateViewController(identifier:"entry") as! EntryViewController
-        vc.title = "New Task"
+        vc.title = "New note"
         vc.update = {
             DispatchQueue.main.async {
                 self.updateTasks()
             }
         }
         navigationController?.pushViewController(vc, animated: true)
-        
     }
-
 }
 
 extension TasksViewController: UITableViewDelegate {
@@ -74,11 +86,10 @@ extension TasksViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let vc = storyboard?.instantiateViewController(identifier:"taskinfo") as! TaskInfoViewController
-        vc.title = "New Task"
+        vc.title = "New note"
         vc.task = tasks[indexPath.row]
         
         navigationController?.pushViewController(vc, animated: true)
-        
     }
 }
     
@@ -94,5 +105,6 @@ extension TasksViewController: UITableViewDataSource {
         cell.textLabel?.text = tasks[indexPath.row]
         return cell
     }
+    
 }
 

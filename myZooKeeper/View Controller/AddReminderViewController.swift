@@ -9,7 +9,7 @@ import UIKit
 import FirebaseFirestore
 import Firebase
 
-class AddReminderViewController: UIViewController {
+class AddReminderViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var titleTextField: UITextField!
     
@@ -21,8 +21,18 @@ class AddReminderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        descriptionTextView.delegate = self
+        titleTextField.delegate = self
     }
     
+    @objc func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (titleTextField != nil) {
+            descriptionTextView.becomeFirstResponder()
+            } else {
+                descriptionTextView.resignFirstResponder()
+            }
+                return true
+        }
 
     @IBAction func submitButtonDidTap(_ sender: Any) {
         

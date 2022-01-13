@@ -36,10 +36,10 @@
                                 <rect key="frame" x="0.0" y="554.66666666666663" width="390" height="255.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yUD-3l-wMp">
-                                        <rect key="frame" x="146.66666666666666" y="115.33333333333337" width="96.666666666666657" height="25"/>
+                                        <rect key="frame" x="130.33333333333337" y="115.33333333333337" width="129.66666666666663" height="25"/>
                                         <subviews>
-                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Dae-pq-Q83">
-                                                <rect key="frame" x="0.0" y="0.0" width="96.666666666666671" height="25"/>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Dae-pq-Q83">
+                                                <rect key="frame" x="0.0" y="0.0" width="129.66666666666666" height="25"/>
                                                 <color key="pageIndicatorTintColor" systemColor="systemGray4Color"/>
                                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                                             </pageControl>
@@ -133,7 +133,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="100" height="89"/>
+        <image name="Image" width="40" height="40"/>
         <image name="homeBackground" width="375" height="375"/>
         <image name="signInButton" width="315" height="50"/>
         <namedColor name="AccentColor">
