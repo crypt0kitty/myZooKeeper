@@ -22,7 +22,7 @@
 		A76EEDDC278BFFBB006BE41E /* myZooKeeper.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = A76EEDDB278BFFBB006BE41E /* myZooKeeper.xcworkspace */; };
 		A797F41025DC577C00D184E5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797F40F25DC577C00D184E5 /* CalendarViewController.swift */; };
 		A7A6A5EE25C935870092584F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7A6A5ED25C935870092584F /* GoogleService-Info.plist */; };
-		A7DE15B4278FACD900C256B8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A7DE15B3278FACD900C256B8 /* icon.png */; };
+		A7B763DC278FC55A001EE012 /* ios-marketing.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B763DB278FC55A001EE012 /* ios-marketing.png */; };
 		A7DE15B6278FAF0900C256B8 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = A7DE15B5278FAF0900C256B8 /* Contents.json */; };
 		A7E5537125D373AD004C5C4F /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E5537025D373AD004C5C4F /* WalkthroughPageViewController.swift */; };
 		A7E5537425D377A2004C5C4F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E5537325D377A2004C5C4F /* WalkthroughViewController.swift */; };
@@ -52,8 +52,8 @@
 		A76EEDDB278BFFBB006BE41E /* myZooKeeper.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = myZooKeeper.xcworkspace; sourceTree = SOURCE_ROOT; };
 		A797F40F25DC577C00D184E5 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		A7A6A5ED25C935870092584F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A7DE15B3278FACD900C256B8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "../../../AppIcons (2)/Assets.xcassets/AppIcon.appiconset/icon.png"; sourceTree = "<group>"; };
-		A7DE15B5278FAF0900C256B8 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = ../../../AppIcon.appiconset/Contents.json; sourceTree = "<group>"; };
+		A7B763DB278FC55A001EE012 /* ios-marketing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios-marketing.png"; path = "Assets.xcassets/AppIcon.appiconset/ios-marketing.png"; sourceTree = "<group>"; };
+		A7DE15B5278FAF0900C256B8 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = Assets.xcassets/Contents.json; sourceTree = "<group>"; };
 		A7E5537025D373AD004C5C4F /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		A7E5537325D377A2004C5C4F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		A7F31CC225C8C563001EA303 /* myZooKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myZooKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,7 +160,7 @@
 				A7DE15B5278FAF0900C256B8 /* Contents.json */,
 				A7A6A5ED25C935870092584F /* GoogleService-Info.plist */,
 				A7F31CD325C8C565001EA303 /* Info.plist */,
-				A7DE15B3278FACD900C256B8 /* icon.png */,
+				A7B763DB278FC55A001EE012 /* ios-marketing.png */,
 			);
 			path = myZooKeeper;
 			sourceTree = "<group>";
@@ -252,9 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6075AAD025D485A800A5371D /* Onboarding.storyboard in Resources */,
-				A7DE15B4278FACD900C256B8 /* icon.png in Resources */,
 				A76EEDDC278BFFBB006BE41E /* myZooKeeper.xcworkspace in Resources */,
 				A7DE15B6278FAF0900C256B8 /* Contents.json in Resources */,
+				A7B763DC278FC55A001EE012 /* ios-marketing.png in Resources */,
 				6075AADC25D487EE00A5371D /* Main.storyboard in Resources */,
 				6075AADB25D487EE00A5371D /* LaunchScreen.storyboard in Resources */,
 				A7A6A5EE25C935870092584F /* GoogleService-Info.plist in Resources */,
@@ -403,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -458,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
