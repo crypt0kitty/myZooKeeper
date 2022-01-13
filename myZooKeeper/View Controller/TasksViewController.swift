@@ -85,9 +85,7 @@ extension TasksViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let vc = storyboard?.instantiateViewController(identifier:"taskinfo") as! TaskInfoViewController
-        vc.title = "New note"
-        vc.task = tasks[indexPath.row]
-        
+
         navigationController?.pushViewController(vc, animated: true)
     }
 }

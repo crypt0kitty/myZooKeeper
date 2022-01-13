@@ -104,7 +104,7 @@ extension PetListViewController: UITableViewDataSource, UITableViewDelegate {
         if let petImage = URL(string: petList[indexPath.row].petImageUrl) {
             cell.petView.sd_setImage(with: petImage, completed: nil)
         }
-        
+
         return cell
     }
     

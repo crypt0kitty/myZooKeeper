@@ -14,52 +14,55 @@
         <scene sceneID="Vgf-ds-aMb">
             <objects>
                 <viewController id="4ze-PV-Bhd" customClass="AddPetViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" opaque="NO" contentMode="scaleToFill" id="0qh-ZT-wT7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" contentMode="scaleToFill" id="0qh-ZT-wT7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pet Weight" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSs-QM-pey">
-                                <rect key="frame" x="86" y="491" width="238" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pet's Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSs-QM-pey">
+                                <rect key="frame" x="86" y="403" width="238" height="34"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6i-nS-O05">
-                                <rect key="frame" x="87" y="389" width="79" height="22"/>
+                                <rect key="frame" x="87" y="301" width="79" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qf-oN-DYj">
-                                <rect key="frame" x="87" y="463" width="57" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qf-oN-DYj">
+                                <rect key="frame" x="87" y="375" width="63" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pet Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0l-SA-vcb">
-                                <rect key="frame" x="86" y="419" width="238" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pet's Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0l-SA-vcb">
+                                <rect key="frame" x="86" y="331" width="238" height="34"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Userpic" translatesAutoresizingMaskIntoConstraints="NO" id="hCj-Ey-fg2">
-                                <rect key="frame" x="142" y="229" width="130" height="130"/>
+                                <rect key="frame" x="142" y="141" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="FiE-pg-7G4"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40q-gS-cg1">
-                                <rect key="frame" x="142" y="229" width="130" height="130"/>
+                                <rect key="frame" x="142" y="141" width="130" height="130"/>
                                 <connections>
                                     <action selector="petSelectionButtonTapWithSender:" destination="4ze-PV-Bhd" eventType="touchUpInside" id="z7z-6n-BAY"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="↳ Display" translatesAutoresizingMaskIntoConstraints="NO" id="KZU-8H-tab">
-                                <rect key="frame" x="121" y="188" width="168" height="21"/>
+                                <rect key="frame" x="121" y="100" width="168" height="21"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TmE-Qt-nly"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="N0l-SA-vcb" firstAttribute="top" secondItem="D6i-nS-O05" secondAttribute="bottom" constant="8" symbolic="YES" id="0Dt-E2-zZo"/>
                             <constraint firstItem="KZU-8H-tab" firstAttribute="top" secondItem="TmE-Qt-nly" secondAttribute="top" constant="100" id="26T-w7-9rc"/>
@@ -82,22 +85,25 @@
                             <constraint firstItem="hCj-Ey-fg2" firstAttribute="top" secondItem="40q-gS-cg1" secondAttribute="top" id="rrU-bG-MSz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="28h-Qd-Goe">
+                    <navigationItem key="navigationItem" id="28h-Qd-Goe">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Z0p-ES-eLj">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ymM-rv-I36">
+                            <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="ymM-rv-I36">
                                 <rect key="frame" x="333" y="5" width="61" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Save"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save">
-                                    <color key="baseForegroundColor" systemColor="systemBlueColor"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="SavePet:" destination="4ze-PV-Bhd" eventType="touchUpInside" id="b3W-J0-yrN"/>
                                 </connections>
                             </button>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" systemColor="systemRedColor"/>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="nameTextField" destination="N0l-SA-vcb" id="QfF-J4-IFj"/>
                         <outlet property="petImageView" destination="hCj-Ey-fg2" id="8iJ-3d-tYU"/>
@@ -108,16 +114,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFs-rS-Y69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6449" y="2350"/>
+            <point key="canvasLocation" x="-6449.275362318841" y="2349.7767857142858"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qr8-BI-gmg">
             <objects>
-                <tabBarController id="4Ru-gQ-lB5" sceneMemberID="viewController">
-                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RkJ-Fr-lTC">
+                <tabBarController interfaceStyle="light" id="4Ru-gQ-lB5" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="RkJ-Fr-lTC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemGray4Color"/>
                         <color key="selectedImageTintColor" systemColor="systemRedColor"/>
                     </tabBar>
                     <connections>
@@ -133,14 +142,15 @@
         <!--Pet Profiles-->
         <scene sceneID="7qx-1R-VZ3">
             <objects>
-                <viewController id="S4U-D5-3Er" customClass="PetListViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="light" id="S4U-D5-3Er" customClass="PetListViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iIj-4X-GfS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oV1-RW-HMv">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oV1-RW-HMv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" systemColor="systemRedColor"/>
                                 <prototypes>
                                     <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="5" indentationWidth="0.0" reuseIdentifier="PetCardCell" rowHeight="300" id="lHG-SS-CEM" customClass="PetCardCell" customModule="myZooKeeper" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="300"/>
@@ -157,7 +167,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4QW-d8-b5H">
-                                                    <rect key="frame" x="135" y="235" width="144.5" height="24"/>
+                                                    <rect key="frame" x="146.5" y="235" width="121" height="24"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PetName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-a7-h1U">
                                                             <rect key="frame" x="0.0" y="0.0" width="81" height="24"/>
@@ -165,8 +175,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxY-j7-uKw">
-                                                            <rect key="frame" x="91" y="0.0" width="53.5" height="24"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxY-j7-uKw">
+                                                            <rect key="frame" x="91" y="0.0" width="30" height="24"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -202,7 +212,7 @@
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aGx-rV-8hQ"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oV1-RW-HMv" firstAttribute="leading" secondItem="aGx-rV-8hQ" secondAttribute="leading" id="ReL-dw-D3Y"/>
@@ -213,12 +223,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Pet Profiles" id="bnH-mX-uv4">
                         <barButtonItem key="rightBarButtonItem" title="Add" style="plain" id="YvV-c3-PX7">
-                            <color key="tintColor" systemColor="systemBlueColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="4ze-PV-Bhd" kind="show" id="Y6v-T6-5lf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="spinner" destination="YBi-Od-4Yy" id="16V-yW-sMJ"/>
                         <outlet property="tableView" destination="oV1-RW-HMv" id="nel-1J-20Y"/>
@@ -228,15 +240,18 @@
             </objects>
             <point key="canvasLocation" x="-5491" y="2350"/>
         </scene>
-        <!--Task List-->
+        <!--New note-->
         <scene sceneID="ABQ-oJ-OaB">
             <objects>
-                <viewController id="tdx-qf-NxV" customClass="TasksViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="M6F-cl-4Al" userLabel="Tasklist">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController interfaceStyle="light" id="tdx-qf-NxV" customClass="TasksViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="M6F-cl-4Al" userLabel="Tasklist">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="nwB-qU-vXJ">
+                        <color key="separatorColor" systemColor="systemRedColor"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemRedColor"/>
+                        <activityIndicatorView key="tableFooterView" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="nwB-qU-vXJ">
                             <rect key="frame" x="0.0" y="110.5" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
@@ -251,14 +266,15 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Task List" id="2ux-qx-jai">
+                    <navigationItem key="navigationItem" title="New note" id="2ux-qx-jai">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="04j-nZ-H3u">
-                            <color key="tintColor" systemColor="systemBlueColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="didTapAdd" destination="tdx-qf-NxV" id="8mM-do-LpI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="spinner" destination="nwB-qU-vXJ" id="w5a-Lk-gI9"/>
                         <outlet property="tasklist" destination="M6F-cl-4Al" id="VYl-zD-lc1"/>
@@ -273,15 +289,24 @@
             <objects>
                 <viewController storyboardIdentifier="entry" id="INj-Yv-2Bj" customClass="EntryViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EoI-Jw-zPq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72J-kL-m6f">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <color key="barTintColor" systemColor="systemGray6Color"/>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72J-kL-m6f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <color key="barTintColor" systemColor="systemRedColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
                                 <items>
-                                    <navigationItem title="Task List" id="Jud-4l-NGh">
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="NUF-0b-MNj"/>
+                                    <navigationItem title="New Note" id="Jud-4l-NGh">
+                                        <barButtonItem key="rightBarButtonItem" title="Save" style="plain" id="NUF-0b-MNj">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -293,6 +318,13 @@
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkp-bg-ScZ">
+                                <rect key="frame" x="27" y="94" width="39" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kPf-mb-p4v"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -302,6 +334,7 @@
                             <constraint firstItem="lzw-su-cDa" firstAttribute="leading" secondItem="kPf-mb-p4v" secondAttribute="leading" constant="20" id="lsN-me-2Ee"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="field" destination="lzw-su-cDa" id="Kby-NE-1of"/>
                     </connections>
@@ -345,14 +378,15 @@
         <!--Calendar Controller-->
         <scene sceneID="Qy1-6R-nfp">
             <objects>
-                <viewController id="AGZ-DN-V5s" userLabel="Calendar Controller" customClass="CalendarViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="light" id="AGZ-DN-V5s" userLabel="Calendar Controller" customClass="CalendarViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BN1-vi-fiA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Z84-eV-fOH">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Z84-eV-fOH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" systemColor="systemRedColor"/>
                                 <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="QY4-HI-EO6">
                                     <rect key="frame" x="0.0" y="110.5" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -381,12 +415,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Reminders" id="Jig-VQ-FT4">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="LdR-Zj-Lbt">
-                            <color key="tintColor" systemColor="systemBlueColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="addButtonDidTap:" destination="AGZ-DN-V5s" id="Il0-qL-d3p"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
                         <outlet property="spinner" destination="QY4-HI-EO6" id="aDm-3J-oIr"/>
                         <outlet property="tableView" destination="Z84-eV-fOH" id="ZUd-J9-XDL"/>
@@ -401,24 +436,30 @@
             <objects>
                 <viewController storyboardIdentifier="AddReminderViewController" id="aNR-oE-2E1" customClass="AddReminderViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="w5J-hp-qin">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiv-my-Fh1">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <color key="barTintColor" systemColor="systemGray6Color"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="barTintColor" systemColor="systemRedColor"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <textAttributes key="largeTitleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="Add Reminder" id="OrS-Sw-K3t"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyF-Vp-nq4">
-                                <rect key="frame" x="25" y="128" width="35" height="21.5"/>
+                                <rect key="frame" x="25" y="84" width="35" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8PG-qs-7z7">
-                                <rect key="frame" x="25" y="164.5" width="364" height="40"/>
+                                <rect key="frame" x="25" y="120.5" width="364" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="jcG-RN-9d7"/>
                                 </constraints>
@@ -426,15 +467,15 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zJ-U7-One">
-                                <rect key="frame" x="25" y="234.5" width="87.5" height="20.5"/>
+                                <rect key="frame" x="25" y="190.5" width="87.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" keyboardDismissMode="onDrag" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yTW-CK-PRb">
-                                <rect key="frame" x="25" y="270" width="364" height="150"/>
+                                <rect key="frame" x="25" y="226" width="364" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="QgR-ad-kf5"/>
                                 </constraints>
@@ -443,10 +484,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                             </textView>
                             <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mjJ-MQ-xbE">
-                                <rect key="frame" x="25" y="450" width="364" height="216"/>
+                                <rect key="frame" x="25" y="406" width="364" height="216"/>
                             </datePicker>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Amt-Cf-FfH">
-                                <rect key="frame" x="25" y="686" width="364" height="40"/>
+                                <rect key="frame" x="25" y="642" width="364" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8bd-WE-FmV"/>
                                 </constraints>
@@ -484,6 +525,7 @@
                             <constraint firstItem="yTW-CK-PRb" firstAttribute="leading" secondItem="Lfw-DL-wcy" secondAttribute="leading" constant="25" id="vhY-6M-JJ7"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="datePicker" destination="mjJ-MQ-xbE" id="sgf-N5-uBw"/>
                         <outlet property="descriptionTextView" destination="yTW-CK-PRb" id="tOe-0t-Plo"/>
@@ -497,18 +539,17 @@
         <!--Home-->
         <scene sceneID="ltC-o5-3qQ">
             <objects>
-                <navigationController id="Yw0-wg-qTQ" sceneMemberID="viewController">
+                <navigationController interfaceStyle="light" toolbarHidden="NO" id="Yw0-wg-qTQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="ys7-Ze-XQ8">
                         <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
-                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" id="qbI-gT-8uC">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="qbI-gT-8uC">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textShadowColor" systemColor="systemBlueColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -522,16 +563,19 @@
         <!--Notes-->
         <scene sceneID="Lir-rg-cMO">
             <objects>
-                <navigationController id="u3G-ha-MMA" sceneMemberID="viewController">
+                <navigationController interfaceStyle="light" id="u3G-ha-MMA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Notes" id="e2A-hY-jh6">
                         <imageReference key="image" image="bell" catalog="system" symbolScale="default"/>
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GGh-WH-jWK">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="GGh-WH-jWK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="tdx-qf-NxV" kind="relationship" relationship="rootViewController" id="nIW-Hr-cZy"/>
@@ -549,11 +593,15 @@
                         <imageReference key="image" image="calendar" catalog="system" symbolScale="default"/>
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fw9-p7-whQ">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="fw9-p7-whQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="AGZ-DN-V5s" kind="relationship" relationship="rootViewController" id="JKe-Qr-tPO"/>
@@ -578,6 +626,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
