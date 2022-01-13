@@ -128,7 +128,6 @@ extension CalendarViewController: RemindersDelegate {
 }
 
 extension CalendarViewController: UITableViewDelegate {
-    
 }
 
 extension CalendarViewController: UITableViewDataSource {

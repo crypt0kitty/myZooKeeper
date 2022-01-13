@@ -12,7 +12,7 @@ import FirebaseFirestore //
 
 class AddPetViewController: UIViewController {
     
-    @IBOutlet weak var NameTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var petImageView: UIImageView!
     @IBOutlet weak var petSelectionButton: UIButton!
@@ -26,6 +26,9 @@ class AddPetViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameTextField.delegate = self
+        weightTextField.delegate = self
        
     }
     
@@ -42,6 +45,15 @@ class AddPetViewController: UIViewController {
         }
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if (nameTextField != nil) {
+                weightTextField.becomeFirstResponder()
+            } else {
+                weightTextField.resignFirstResponder()
+            }
+                return true
+        }
+    
     
     @IBAction func SavePet(_ sender: UIButton) {
         /*
@@ -53,7 +65,7 @@ class AddPetViewController: UIViewController {
                 var ref: DocumentReference? = nil
                 let uid = Auth.auth().currentUser!.uid
                 ref = Firestore.firestore().collection("pet_profiles").addDocument(data: [
-                    "name": self.NameTextField.text!,
+                    "name": self.nameTextField.text!,
                     "weight": self.weightTextField.text!,
                     "userId": uid,
                     "petImageUrl": url!.absoluteString,
@@ -142,13 +154,14 @@ class AddPetViewController: UIViewController {
     
 }
 
-extension AddPetViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension AddPetViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
         let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         petImageView.image = image
         selectedPetImage = image!
     }
+    
 }
 
 

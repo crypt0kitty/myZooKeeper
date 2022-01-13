@@ -22,7 +22,7 @@
                                 <rect key="frame" x="86" y="491" width="238" height="34"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6i-nS-O05">
                                 <rect key="frame" x="87" y="389" width="79" height="22"/>
@@ -99,7 +99,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="NameTextField" destination="N0l-SA-vcb" id="QfF-J4-IFj"/>
+                        <outlet property="nameTextField" destination="N0l-SA-vcb" id="QfF-J4-IFj"/>
                         <outlet property="petImageView" destination="hCj-Ey-fg2" id="8iJ-3d-tYU"/>
                         <outlet property="petSelectionButton" destination="40q-gS-cg1" id="3Ym-FS-UCD"/>
                         <outlet property="saveButton" destination="Z0p-ES-eLj" id="jGw-Xi-KfJ"/>
