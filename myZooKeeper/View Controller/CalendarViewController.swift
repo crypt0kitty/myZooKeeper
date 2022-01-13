@@ -13,7 +13,7 @@ protocol RemindersDelegate: AnyObject {
     func fetchData()
 }
 
-class CalendarViewController: UIViewController {
+class CalendarViewController: UIViewController, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
@@ -35,7 +35,6 @@ class CalendarViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         getReminders()
-        
     }
     
     func getReminders() {
@@ -119,8 +118,6 @@ class CalendarViewController: UIViewController {
         vc.remindersDelegate = self
         present(vc, animated: true, completion: nil)
     }
-    
-    
 }
 
 extension CalendarViewController: RemindersDelegate {
@@ -130,25 +127,25 @@ extension CalendarViewController: RemindersDelegate {
     }
 }
 
-extension CalendarViewController: UITableViewDelegate {
-}
-
 extension CalendarViewController: UITableViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Monthly reminders"
+        }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {        
+        return reminders.count
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return reminders.count
+    func numberOfSections(in tableView: UITableView) -> Int {
+      return reminders.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderTableViewCell", for: indexPath)
         let reminder = reminders[indexPath.row]
-        cell.textLabel?.text = reminder.title + " created at " + reminder.getFormattedDate()
+        cell.textLabel?.text = reminder.title + " created in: " + reminder.getFormattedDate()
         cell.detailTextLabel?.text = reminder.description
         return cell
     }
-    
 }

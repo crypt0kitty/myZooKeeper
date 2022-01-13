@@ -90,9 +90,7 @@ extension WalkthroughPageViewController: UIPageViewControllerDelegate {
         
         if completed {
             if let contentViewController = pageViewController.viewControllers?.first as? WalkthroughContentViewController {
-                
                 currentIndex = contentViewController.index
-                
                 walkthroughDelegate?.didUpdatePageIndex(currentIndex: contentViewController.index)
             }
         

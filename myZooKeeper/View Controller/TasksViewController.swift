@@ -14,7 +14,6 @@ class TasksViewController: UIViewController {
     
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet var tasklist: UITableView!
-    
     var tasks = [String]()
     var pullControl = UIRefreshControl()
 
