@@ -129,22 +129,14 @@ extension CalendarViewController: RemindersDelegate {
 
 extension CalendarViewController: UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Monthly reminders"
-        }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {        
         return reminders.count
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-      return reminders.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderTableViewCell", for: indexPath)
         let reminder = reminders[indexPath.row]
-        cell.textLabel?.text = reminder.title + " created in: " + reminder.getFormattedDate()
+        cell.textLabel?.text = reminder.title + ": " + reminder.getFormattedDate()
         cell.detailTextLabel?.text = reminder.description
         return cell
     }

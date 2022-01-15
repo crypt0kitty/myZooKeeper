@@ -40,7 +40,17 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
             if let err = err {
                 print("Error adding document: \(err)")
             } else {
-                print("Document added with ID: \(ref!.documentID)")// transition to next view to show the task
+                /*
+                 Show alert when adding a pet note
+                 */
+                
+                let alert = UIAlertController(title: "Success", message: "Note added successfully!", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default) { action in
+                    self.dismiss(animated: true, completion: nil)
+                }
+                alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
+               
          }
        }
     }

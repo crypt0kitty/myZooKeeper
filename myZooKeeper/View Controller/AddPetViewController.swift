@@ -77,11 +77,9 @@ class AddPetViewController: UIViewController {
                     if let err = err {
                         print("Error adding document: \(err)")
                     } else {
-                        //print("Document added with ID: \(ref!.documentID)")
                         /*
                          Show alert when adding a pet
                          */
-                        
                         let alert = UIAlertController(title: "Success", message: "Pet added successfully!", preferredStyle: .alert)
                         let okAction = UIAlertAction(title: "OK", style: .default) { action in
                             self.dismiss(animated: true, completion: nil)

@@ -35,7 +35,6 @@ class TasksViewController: UIViewController {
         updateTasks()
     }
     
-    
     @objc func refresh(_ sender: AnyObject) {
         self.tasklist.reloadData()
         self.pullControl.endRefreshing()
@@ -70,7 +69,6 @@ class TasksViewController: UIViewController {
     @IBAction func didTapAdd() {
         //show another view controller to make an entry
         let vc = storyboard?.instantiateViewController(identifier:"entry") as! EntryViewController
-        vc.title = "New note"
         vc.update = {
             DispatchQueue.main.async {
                 self.updateTasks()

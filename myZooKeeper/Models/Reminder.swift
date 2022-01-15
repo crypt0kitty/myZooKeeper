@@ -23,7 +23,7 @@ struct Reminder {
     
     func getFormattedDate() -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM"
+        dateFormatter.dateFormat = "MMMM, DD, YYYY"
         return dateFormatter.string(from: reminderDate)
     }
 }
