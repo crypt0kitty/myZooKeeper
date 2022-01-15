@@ -18,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
       UITextView.appearance().font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle(rawValue: "Menlo"))
       
+      UITextField.appearance().font = .systemFont(ofSize: 17)
       UITextView.appearance().font = .systemFont(ofSize: 16)
-      UILabel.appearance().font = .boldSystemFont(ofSize: 16.0)
+      UILabel.appearance().font = .boldSystemFont(ofSize: 17.0)
 
       if #available(iOS 15.0, *) {
           let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
