@@ -12,9 +12,7 @@ import Firebase
 class AddReminderViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var titleTextField: UITextField!
-    
     @IBOutlet weak var descriptionTextView: UITextView!
-    
     @IBOutlet weak var datePicker: UIDatePicker!
     
     weak var remindersDelegate: RemindersDelegate?

@@ -19,10 +19,10 @@ class TasksViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.tintColor = .white
         self.title = "Notes"
-        
-        pullControl.backgroundColor = UIColor.systemRed
-        pullControl.tintColor = UIColor.white
+        pullControl.backgroundColor = UIColor.white
+        pullControl.tintColor = UIColor.systemRed
         pullControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
         if #available(iOS 10.0, *) {
             tasklist.refreshControl = pullControl

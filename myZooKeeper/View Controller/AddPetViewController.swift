@@ -16,9 +16,6 @@ class AddPetViewController: UIViewController {
     @IBOutlet weak var weightTextField: UITextField!
     @IBOutlet weak var petImageView: UIImageView!
     @IBOutlet weak var petSelectionButton: UIButton!
-    /*
-     Add a save button reference
-     */
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
     var imagePicker = UIImagePickerController()
@@ -28,6 +25,7 @@ class AddPetViewController: UIViewController {
         super.viewDidLoad()
         nameTextField.delegate = self
         weightTextField.delegate = self
+        navigationController?.navigationBar.tintColor = .white
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -132,7 +130,7 @@ class AddPetViewController: UIViewController {
 
         let metadata = StorageMetadata()
         metadata.contentType = "image/png"
-        storageRef.putData(imageData!, metadata: metadata) { (url, error) in
+        storageRef.putData((imageData ?? imageData)!, metadata: metadata) { (url, error) in
             if error == nil {
                 storageRef.downloadURL { (url, error) in
                     if error == nil {

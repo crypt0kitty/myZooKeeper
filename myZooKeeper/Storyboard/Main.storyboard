@@ -13,51 +13,51 @@
         <!--Add Pet View Controller-->
         <scene sceneID="Vgf-ds-aMb">
             <objects>
-                <viewController id="4ze-PV-Bhd" customClass="AddPetViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="4ze-PV-Bhd" customClass="AddPetViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0qh-ZT-wT7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pet's Age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GSs-QM-pey">
-                                <rect key="frame" x="86" y="403" width="238" height="34"/>
+                                <rect key="frame" x="86" y="491" width="238" height="34"/>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6i-nS-O05">
-                                <rect key="frame" x="87" y="301" width="79" height="22"/>
+                                <rect key="frame" x="87" y="389" width="79" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qf-oN-DYj">
-                                <rect key="frame" x="87" y="375" width="63" height="22"/>
+                                <rect key="frame" x="87" y="463" width="63" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pet's Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N0l-SA-vcb">
-                                <rect key="frame" x="86" y="331" width="238" height="34"/>
+                                <rect key="frame" x="86" y="419" width="238" height="34"/>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Userpic" translatesAutoresizingMaskIntoConstraints="NO" id="hCj-Ey-fg2">
-                                <rect key="frame" x="142" y="141" width="130" height="130"/>
+                                <rect key="frame" x="142" y="229" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="FiE-pg-7G4"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40q-gS-cg1">
-                                <rect key="frame" x="142" y="141" width="130" height="130"/>
+                                <rect key="frame" x="142" y="229" width="130" height="130"/>
                                 <connections>
                                     <action selector="petSelectionButtonTapWithSender:" destination="4ze-PV-Bhd" eventType="touchUpInside" id="z7z-6n-BAY"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="↳ Display" translatesAutoresizingMaskIntoConstraints="NO" id="KZU-8H-tab">
-                                <rect key="frame" x="121" y="100" width="168" height="21"/>
+                                <rect key="frame" x="121" y="188" width="168" height="21"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TmE-Qt-nly"/>
@@ -142,49 +142,48 @@
         <!--Pet Profiles-->
         <scene sceneID="7qx-1R-VZ3">
             <objects>
-                <viewController interfaceStyle="light" id="S4U-D5-3Er" customClass="PetListViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" interfaceStyle="light" id="S4U-D5-3Er" customClass="PetListViewController" customModule="myZooKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iIj-4X-GfS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oV1-RW-HMv">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" systemColor="systemRedColor"/>
                                 <prototypes>
-                                    <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="5" indentationWidth="0.0" reuseIdentifier="PetCardCell" rowHeight="300" id="lHG-SS-CEM" customClass="PetCardCell" customModule="myZooKeeper" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="5" indentationWidth="0.0" reuseIdentifier="PetCardCell" rowHeight="300" id="lHG-SS-CEM" customClass="PetCardCell" customModule="myZooKeeper" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lHG-SS-CEM" id="diu-WU-ul5">
+                                        <tableViewCellContentView key="contentView" clipsSubviews="YES" contentMode="redraw" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lHG-SS-CEM" id="diu-WU-ul5">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-YP-qzC">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zfb-YP-qzC">
                                                     <rect key="frame" x="73" y="27" width="268" height="200"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" priority="200" constant="200" id="cEG-lT-68y"/>
                                                         <constraint firstAttribute="height" constant="200" id="kY6-aB-1d1"/>
                                                     </constraints>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4QW-d8-b5H">
-                                                    <rect key="frame" x="146.5" y="235" width="121" height="24"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PetName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-a7-h1U">
-                                                            <rect key="frame" x="0.0" y="0.0" width="81" height="24"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxY-j7-uKw">
-                                                            <rect key="frame" x="91" y="0.0" width="30" height="24"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dff-a7-h1U">
+                                                    <rect key="frame" x="73" y="230.5" width="47" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxY-j7-uKw">
+                                                    <rect key="frame" x="304" y="228.5" width="33" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4QW-d8-b5H">
+                                                    <rect key="frame" x="192" y="235" width="30" height="20.5"/>
                                                 </stackView>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <rect key="contentStretch" x="0.14999999999999999" y="0.0" width="0.75" height="1"/>
                                             <constraints>
                                                 <constraint firstItem="zfb-YP-qzC" firstAttribute="top" secondItem="diu-WU-ul5" secondAttribute="topMargin" constant="16" id="4Z1-tG-t4o"/>
@@ -212,8 +211,7 @@
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aGx-rV-8hQ"/>
-                        <color key="backgroundColor" systemColor="systemGray4Color"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oV1-RW-HMv" firstAttribute="leading" secondItem="aGx-rV-8hQ" secondAttribute="leading" id="ReL-dw-D3Y"/>
                             <constraint firstItem="oV1-RW-HMv" firstAttribute="top" secondItem="aGx-rV-8hQ" secondAttribute="top" id="hDD-QV-TOx"/>
@@ -229,8 +227,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="spinner" destination="YBi-Od-4Yy" id="16V-yW-sMJ"/>
                         <outlet property="tableView" destination="oV1-RW-HMv" id="nel-1J-20Y"/>
@@ -267,7 +264,7 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="New note" id="2ux-qx-jai">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="04j-nZ-H3u">
+                        <barButtonItem key="rightBarButtonItem" title="Add" style="plain" id="04j-nZ-H3u">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="didTapAdd" destination="tdx-qf-NxV" id="8mM-do-LpI"/>
@@ -319,7 +316,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hkp-bg-ScZ">
-                                <rect key="frame" x="27" y="94" width="39" height="22"/>
+                                <rect key="frame" x="23" y="94" width="39" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -443,7 +440,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <color key="barTintColor" systemColor="systemRedColor"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" systemColor="systemRedColor"/>
+                                    <color key="textShadowColor" systemColor="systemRedColor"/>
                                 </textAttributes>
                                 <textAttributes key="largeTitleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -539,7 +537,7 @@
         <!--Home-->
         <scene sceneID="ltC-o5-3qQ">
             <objects>
-                <navigationController interfaceStyle="light" toolbarHidden="NO" id="Yw0-wg-qTQ" sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" interfaceStyle="light" toolbarHidden="NO" id="Yw0-wg-qTQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" id="ys7-Ze-XQ8">
                         <imageReference key="image" image="house" catalog="system" symbolScale="default"/>
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -563,7 +561,7 @@
         <!--Notes-->
         <scene sceneID="Lir-rg-cMO">
             <objects>
-                <navigationController interfaceStyle="light" id="u3G-ha-MMA" sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" interfaceStyle="light" id="u3G-ha-MMA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Notes" id="e2A-hY-jh6">
                         <imageReference key="image" image="bell" catalog="system" symbolScale="default"/>
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -588,7 +586,7 @@
         <!--Reminders -->
         <scene sceneID="19J-6P-Omz">
             <objects>
-                <navigationController interfaceStyle="light" id="rR7-GC-fab" userLabel="Reminders " sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" interfaceStyle="light" id="rR7-GC-fab" userLabel="Reminders " sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Reminders" id="kzI-5t-JXE">
                         <imageReference key="image" image="calendar" catalog="system" symbolScale="default"/>
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -43,7 +43,6 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
                 /*
                  Show alert when adding a pet note
                  */
-                
                 let alert = UIAlertController(title: "Success", message: "Note added successfully!", preferredStyle: .alert)
                 let okAction = UIAlertAction(title: "OK", style: .default) { action in
                     self.dismiss(animated: true, completion: nil)

@@ -15,8 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
         [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        // Override point for customization after application launch.
+      if #available(iOS 15.0, *) {
+          let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+                     let appearance = UINavigationBarAppearance()
+                     appearance.configureWithOpaqueBackground()
+          appearance.titleTextAttributes = textAttributes
+                     appearance.backgroundColor = UIColor.systemBlue// UIColor(red: 0.0/255.0, green: 125/255.0, blue: 0.0/255.0, alpha: 1.0)
+//                     appearance.shadowColor = .clear  //removing navigationbar 1 px bottom border.
+                     UINavigationBar.appearance().standardAppearance = appearance
+                     UINavigationBar.appearance().scrollEdgeAppearance = appearance
+      }
 
     FirebaseApp.configure()
         db = Firestore.firestore()
