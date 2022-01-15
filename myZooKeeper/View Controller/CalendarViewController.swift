@@ -62,7 +62,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate {
                     return Reminder(snapshot: snapshot)
                 })
                 strongSelf.reminders.sort { reminderOne, reminderTwo in
-                    reminderOne.reminderDate > reminderTwo.reminderDate
+                    reminderOne.reminderDate < reminderTwo.reminderDate
                 }
                 DispatchQueue.main.async {
                     strongSelf.tableView.reloadData()
