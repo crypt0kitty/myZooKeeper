@@ -135,8 +135,8 @@ extension CalendarViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderTableViewCell", for: indexPath)
         let reminder = reminders[indexPath.row]
-        cell.textLabel?.text = reminder.title + ": " + reminder.getFormattedDate()
-        cell.detailTextLabel?.text = reminder.description
+        cell.textLabel?.text = reminder.title + reminder.getFormattedDate()
+//        cell.detailTextLabel?.text = reminder.description
         return cell
     }
 }
