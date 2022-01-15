@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:
         [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+      
+      UITextView.appearance().font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle(rawValue: "Menlo"))
+
       if #available(iOS 15.0, *) {
           let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
                      let appearance = UINavigationBarAppearance()
