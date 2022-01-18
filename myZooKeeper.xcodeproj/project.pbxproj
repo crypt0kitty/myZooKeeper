@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05F41F1D621F09D30FAF31AA /* Pods_myZooKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C959EFFB7A7363DA1052B5F8 /* Pods_myZooKeeper.framework */; };
 		6075AAD025D485A800A5371D /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6075AACF25D485A800A5371D /* Onboarding.storyboard */; };
 		6075AADB25D487EE00A5371D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6075AAD925D487EE00A5371D /* LaunchScreen.storyboard */; };
 		6075AADC25D487EE00A5371D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6075AADA25D487EE00A5371D /* Main.storyboard */; };
@@ -20,15 +19,16 @@
 		A737232925D6693A008E680C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A737232825D6693A008E680C /* Pet.swift */; };
 		A752D41E25D23C8E0011B657 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A752D41D25D23C8E0011B657 /* WalkthroughContentViewController.swift */; };
 		A76EEDDC278BFFBB006BE41E /* myZooKeeper.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = A76EEDDB278BFFBB006BE41E /* myZooKeeper.xcworkspace */; };
+		A782334B27966E9700DC2985 /* favicon-180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = A782334A27966E9600DC2985 /* favicon-180x180.png */; };
 		A797F41025DC577C00D184E5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797F40F25DC577C00D184E5 /* CalendarViewController.swift */; };
 		A7A6A5EE25C935870092584F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7A6A5ED25C935870092584F /* GoogleService-Info.plist */; };
-		A7B763DC278FC55A001EE012 /* ios-marketing.png in Resources */ = {isa = PBXBuildFile; fileRef = A7B763DB278FC55A001EE012 /* ios-marketing.png */; };
 		A7DE15B6278FAF0900C256B8 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = A7DE15B5278FAF0900C256B8 /* Contents.json */; };
 		A7E5537125D373AD004C5C4F /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E5537025D373AD004C5C4F /* WalkthroughPageViewController.swift */; };
 		A7E5537425D377A2004C5C4F /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E5537325D377A2004C5C4F /* WalkthroughViewController.swift */; };
 		A7F31CC625C8C563001EA303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31CC525C8C563001EA303 /* AppDelegate.swift */; };
 		A7F31CC825C8C563001EA303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F31CC725C8C563001EA303 /* SceneDelegate.swift */; };
 		A7F31CCF25C8C565001EA303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F31CCE25C8C565001EA303 /* Assets.xcassets */; };
+		B994650142430D1241169B72 /* Pods_myZooKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A09B50FDABEDC9402F7E638 /* Pods_myZooKeeper.framework */; };
 		E1193A4827822C5C00F7B9D9 /* Extensions+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1193A4727822C5C00F7B9D9 /* Extensions+Date.swift */; };
 		E1560F3927881A84006E17A8 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1560F3827881A84006E17A8 /* AddReminderViewController.swift */; };
 		E1560F3B27881DB8006E17A8 /* Extensions+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1560F3A27881DB8006E17A8 /* Extensions+String.swift */; };
@@ -37,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A09B50FDABEDC9402F7E638 /* Pods_myZooKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myZooKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6075AACF25D485A800A5371D /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		6075AAD925D487EE00A5371D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6075AADA25D487EE00A5371D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -44,15 +45,15 @@
 		60B51D6625DC085A004B6056 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		60B51D6B25DC11A7004B6056 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		60B51D6E25DC11F7004B6056 /* TaskInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfoViewController.swift; sourceTree = "<group>"; };
-		9B895190997A2B9AF7BD2AE2 /* Pods-myZooKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myZooKeeper.debug.xcconfig"; path = "Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper.debug.xcconfig"; sourceTree = "<group>"; };
+		728A66101728CF24ED0EBD82 /* Pods-myZooKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myZooKeeper.debug.xcconfig"; path = "Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 		A73722ED25D64E9A008E680C /* PetCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCardCell.swift; sourceTree = "<group>"; };
 		A737232425D665D4008E680C /* PetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewController.swift; sourceTree = "<group>"; };
 		A737232825D6693A008E680C /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		A752D41D25D23C8E0011B657 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		A76EEDDB278BFFBB006BE41E /* myZooKeeper.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = myZooKeeper.xcworkspace; sourceTree = SOURCE_ROOT; };
+		A782334A27966E9600DC2985 /* favicon-180x180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "favicon-180x180.png"; path = "Assets.xcassets/AppIcon.appiconset/favicon-180x180.png"; sourceTree = "<group>"; };
 		A797F40F25DC577C00D184E5 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		A7A6A5ED25C935870092584F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A7B763DB278FC55A001EE012 /* ios-marketing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios-marketing.png"; path = "Assets.xcassets/AppIcon.appiconset/ios-marketing.png"; sourceTree = "<group>"; };
 		A7DE15B5278FAF0900C256B8 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = Assets.xcassets/Contents.json; sourceTree = "<group>"; };
 		A7E5537025D373AD004C5C4F /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		A7E5537325D377A2004C5C4F /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
@@ -60,14 +61,13 @@
 		A7F31CC525C8C563001EA303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F31CC725C8C563001EA303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A7F31CCE25C8C565001EA303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A7F31CD325C8C565001EA303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C959EFFB7A7363DA1052B5F8 /* Pods_myZooKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myZooKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F31CD325C8C565001EA303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = myZooKeeper/Info.plist; sourceTree = SOURCE_ROOT; };
 		E1193A4727822C5C00F7B9D9 /* Extensions+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Date.swift"; sourceTree = "<group>"; };
 		E1560F3827881A84006E17A8 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
 		E1560F3A27881DB8006E17A8 /* Extensions+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+String.swift"; sourceTree = "<group>"; };
 		E1560F3D2788268A006E17A8 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		E1BFF7F42786B76500A24C12 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
-		EC77B59E4DB0E26396BC995D /* Pods-myZooKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myZooKeeper.release.xcconfig"; path = "Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper.release.xcconfig"; sourceTree = "<group>"; };
+		E9DCFA3E0ED38118CA36442B /* Pods-myZooKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myZooKeeper.release.xcconfig"; path = "Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +75,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05F41F1D621F09D30FAF31AA /* Pods_myZooKeeper.framework in Frameworks */,
+				B994650142430D1241169B72 /* Pods_myZooKeeper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E0AAAB9CF00D7D3CEFCAE9C /* Frameworks */ = {
+		A4FC282A474D208FDB30706C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C959EFFB7A7363DA1052B5F8 /* Pods_myZooKeeper.framework */,
+				3A09B50FDABEDC9402F7E638 /* Pods_myZooKeeper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 				A7F31CC425C8C563001EA303 /* myZooKeeper */,
 				A7F31CC325C8C563001EA303 /* Products */,
 				EBCA6D55A05CA04E7025C358 /* Pods */,
-				0E0AAAB9CF00D7D3CEFCAE9C /* Frameworks */,
+				A4FC282A474D208FDB30706C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,7 +160,7 @@
 				A7DE15B5278FAF0900C256B8 /* Contents.json */,
 				A7A6A5ED25C935870092584F /* GoogleService-Info.plist */,
 				A7F31CD325C8C565001EA303 /* Info.plist */,
-				A7B763DB278FC55A001EE012 /* ios-marketing.png */,
+				A782334A27966E9600DC2985 /* favicon-180x180.png */,
 			);
 			path = myZooKeeper;
 			sourceTree = "<group>";
@@ -185,8 +185,8 @@
 		EBCA6D55A05CA04E7025C358 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9B895190997A2B9AF7BD2AE2 /* Pods-myZooKeeper.debug.xcconfig */,
-				EC77B59E4DB0E26396BC995D /* Pods-myZooKeeper.release.xcconfig */,
+				728A66101728CF24ED0EBD82 /* Pods-myZooKeeper.debug.xcconfig */,
+				E9DCFA3E0ED38118CA36442B /* Pods-myZooKeeper.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -198,12 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7F31CD625C8C565001EA303 /* Build configuration list for PBXNativeTarget "myZooKeeper" */;
 			buildPhases = (
-				95ECF850D9539D57DB356915 /* [CP] Check Pods Manifest.lock */,
+				030D7488E322AE155AC32B02 /* [CP] Check Pods Manifest.lock */,
 				A7F31CBE25C8C563001EA303 /* Sources */,
 				A7F31CBF25C8C563001EA303 /* Frameworks */,
 				A7F31CC025C8C563001EA303 /* Resources */,
-				D2AE6C075420665FAADB5AA9 /* [CP] Embed Pods Frameworks */,
-				E8CD07CE69F6E6DE36B36D79 /* [CP] Copy Pods Resources */,
+				55AC18689171B51E74545926 /* [CP] Embed Pods Frameworks */,
+				6A3FD9C75D1247EA939404C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,7 +254,7 @@
 				6075AAD025D485A800A5371D /* Onboarding.storyboard in Resources */,
 				A76EEDDC278BFFBB006BE41E /* myZooKeeper.xcworkspace in Resources */,
 				A7DE15B6278FAF0900C256B8 /* Contents.json in Resources */,
-				A7B763DC278FC55A001EE012 /* ios-marketing.png in Resources */,
+				A782334B27966E9700DC2985 /* favicon-180x180.png in Resources */,
 				6075AADC25D487EE00A5371D /* Main.storyboard in Resources */,
 				6075AADB25D487EE00A5371D /* LaunchScreen.storyboard in Resources */,
 				A7A6A5EE25C935870092584F /* GoogleService-Info.plist in Resources */,
@@ -265,7 +265,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		95ECF850D9539D57DB356915 /* [CP] Check Pods Manifest.lock */ = {
+		030D7488E322AE155AC32B02 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,7 +287,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D2AE6C075420665FAADB5AA9 /* [CP] Embed Pods Frameworks */ = {
+		55AC18689171B51E74545926 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,7 +304,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myZooKeeper/Pods-myZooKeeper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E8CD07CE69F6E6DE36B36D79 /* [CP] Copy Pods Resources */ = {
+		6A3FD9C75D1247EA939404C4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,7 +470,7 @@
 		};
 		A7F31CD725C8C565001EA303 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B895190997A2B9AF7BD2AE2 /* Pods-myZooKeeper.debug.xcconfig */;
+			baseConfigurationReference = 728A66101728CF24ED0EBD82 /* Pods-myZooKeeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -491,7 +491,7 @@
 		};
 		A7F31CD825C8C565001EA303 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC77B59E4DB0E26396BC995D /* Pods-myZooKeeper.release.xcconfig */;
+			baseConfigurationReference = E9DCFA3E0ED38118CA36442B /* Pods-myZooKeeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
