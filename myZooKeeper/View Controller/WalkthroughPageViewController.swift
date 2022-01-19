@@ -15,7 +15,7 @@ class WalkthroughPageViewController: UIPageViewController {
 
     var pageHeadings = ["myZooKeeper","Pet profiles","Create notes","Reminders"]
     var pageImages = ["","","","",""]
-    var pageSubHeadings = ["pet-care made easy...","add your pet's picture and weight...","keep healthcare notes for your pet...","get pet reminders..."]
+    var pageSubHeadings = ["pet-care made easy...","add your pet's picture and age...","healthcare notes for your pet...","get pet reminders..."]
 
     var currentIndex = 0
     

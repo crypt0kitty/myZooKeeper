@@ -9,7 +9,6 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 
-
 class TasksViewController: UIViewController {
     
     @IBOutlet weak var spinner: UIActivityIndicatorView!

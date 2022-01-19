@@ -144,7 +144,6 @@ class AddPetViewController: UIViewController {
             }
         }
     }
-    
 }
 
 extension AddPetViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {

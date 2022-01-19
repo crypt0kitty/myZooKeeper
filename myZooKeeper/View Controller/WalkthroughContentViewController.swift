@@ -11,14 +11,16 @@ class WalkthroughContentViewController: UIViewController {
 
     @IBOutlet var headingLabel: UILabel! {
         didSet {
-            headingLabel.numberOfLines = 2
+            headingLabel.numberOfLines = 0
             headingLabel.textColor = .systemBlue
+            headingLabel.setContentCompressionResistancePriority(.fittingSizeLevel, for: .vertical)
         }
     }
 
     @IBOutlet var subHeadingLabel: UILabel! {
         didSet {
-            subHeadingLabel.numberOfLines = 3
+            subHeadingLabel.numberOfLines = 0
+
         }
     }
             
@@ -32,26 +34,15 @@ class WalkthroughContentViewController: UIViewController {
         
         headingLabel.text = heading
         subHeadingLabel.text = subHeading
-        headingLabel.setSizeFont(sizeFont: 20, font: "Menlo")
-
+        headingLabel.setSizeFont(sizeFont: 30, font: "Menlo")
     }
 }
-
 
 extension UILabel {
     func setSizeFont (sizeFont: Int, font: String ) {
         self.font =  UIFont(name: self.font.familyName, size: CGFloat(sizeFont))!
         self.font = UIFont.boldSystemFont(ofSize: 30)
         
-//        self.font =  UIFont(name: self.font.familyName, size: CGFloat(sizeFont))!
-//        self.font = UIFont.boldSystemFont(ofSize: 30)
-//
-//
-//
-
     }
-
 }
-
-// Use
 

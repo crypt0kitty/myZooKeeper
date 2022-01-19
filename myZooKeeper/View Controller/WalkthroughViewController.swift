@@ -69,10 +69,9 @@ extension WalkthroughViewController:  GIDSignInDelegate {
                 UserDefaults.standard.setValue(true, forKey: "isSignedIn")
                 self.dismiss(animated: true, completion: nil)
             }
-            
         })
-        
     }
+    
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
     }
 }
