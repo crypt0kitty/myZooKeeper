@@ -17,18 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
       
       UITextView.appearance().font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle(rawValue: "Menlo"))
-      
       UITextField.appearance().font = .systemFont(ofSize: 17)
       UITextView.appearance().font = .systemFont(ofSize: 16)
-      UILabel.appearance().font = .boldSystemFont(ofSize: 17.0)
+//      UILabel.appearance().font = .boldSystemFont(ofSize: 17.0)
 
       if #available(iOS 15.0, *) {
           let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
                      let appearance = UINavigationBarAppearance()
                      appearance.configureWithOpaqueBackground()
+          
           appearance.titleTextAttributes = textAttributes
-                     appearance.backgroundColor = UIColor.systemBlue// UIColor(red: 0.0/255.0, green: 125/255.0, blue: 0.0/255.0, alpha: 1.0)
-//                     appearance.shadowColor = .clear  //removing navigationbar 1 px bottom border.
+                     appearance.backgroundColor = UIColor.systemBlue
                      UINavigationBar.appearance().standardAppearance = appearance
                      UINavigationBar.appearance().scrollEdgeAppearance = appearance
       }
