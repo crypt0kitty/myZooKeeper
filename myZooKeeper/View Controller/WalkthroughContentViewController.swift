@@ -20,7 +20,6 @@ class WalkthroughContentViewController: UIViewController {
     @IBOutlet var subHeadingLabel: UILabel! {
         didSet {
             subHeadingLabel.numberOfLines = 0
-
         }
     }
             
@@ -31,18 +30,17 @@ class WalkthroughContentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         headingLabel.text = heading
         subHeadingLabel.text = subHeading
         headingLabel.setSizeFont(sizeFont: 30, font: "Menlo")
+        subHeadingLabel.setSizeFont(sizeFont: 17, font: "Hevlectica")
     }
 }
 
 extension UILabel {
     func setSizeFont (sizeFont: Int, font: String ) {
         self.font =  UIFont(name: self.font.familyName, size: CGFloat(sizeFont))!
-        self.font = UIFont.boldSystemFont(ofSize: 30)
-        
+        self.font = UIFont.boldSystemFont(ofSize: CGFloat(sizeFont))
     }
 }
 

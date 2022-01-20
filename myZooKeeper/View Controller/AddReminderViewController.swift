@@ -4,7 +4,6 @@
 //
 //  Created by Sandy Vasquez on 1/10/2022.
 //
-
 import UIKit
 import FirebaseFirestore
 import Firebase
@@ -21,6 +20,15 @@ class AddReminderViewController: UIViewController, UITextViewDelegate, UITextFie
         super.viewDidLoad()
         descriptionTextView.delegate = self
         titleTextField.delegate = self
+        
+        let textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+                          let appearance = UINavigationBarAppearance()
+                          appearance.configureWithOpaqueBackground()
+               
+               appearance.titleTextAttributes = textAttributes
+                          appearance.backgroundColor = UIColor.systemRed
+                          UINavigationBar.appearance().standardAppearance = appearance
+                          UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
     
     @objc func textFieldShouldReturn(_ textField: UITextField) -> Bool {
