@@ -16,17 +16,12 @@ class WalkthroughPageViewController: UIPageViewController {
     var pageHeadings = ["myZooKeeper","Pet profiles","Create notes","Reminders"]
     var pageImages = ["","","","",""]
     var pageSubHeadings = ["pet-care made easy...","add your pet's picture and age...","healthcare notes for your pet...","get pet reminders..."]
-
     var currentIndex = 0
-    
     weak var walkthroughDelegate: WalkthroughPageViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Set the data source to itself
         dataSource = self
-        
         // Create the first walkthrough screen
         if let startingViewController = contentViewController(at: 0) {
             setViewControllers([startingViewController], direction: .forward, animated: true, completion: nil)
@@ -67,7 +62,6 @@ extension WalkthroughPageViewController: UIPageViewControllerDataSource {
         if index < 0 || index >= pageHeadings.count {
             return nil
         }
-        
         // Create a new view controller and pass suitable data.
         let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
         if let pageContentViewController = storyboard.instantiateViewController(withIdentifier: "WalkthroughContentViewController") as? WalkthroughContentViewController {

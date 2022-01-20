@@ -37,7 +37,8 @@ class AddReminderViewController: UIViewController, UITextViewDelegate, UITextFie
             } else {
                 descriptionTextView.resignFirstResponder()
             }
-                return true
+        
+        return true
         }
 
     @IBAction func submitButtonDidTap(_ sender: Any) {
@@ -85,7 +86,6 @@ class AddReminderViewController: UIViewController, UITextViewDelegate, UITextFie
                 }
             }
         }
-        
     }
     
     func presentAlert(title: String, message: String) {
@@ -96,5 +96,4 @@ class AddReminderViewController: UIViewController, UITextViewDelegate, UITextFie
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)
     }
-    
 }

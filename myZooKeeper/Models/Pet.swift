@@ -10,7 +10,7 @@ import Firebase
 import FirebaseFirestore
 
 struct Pet {
-
+    
     var petName: String
     var petWeight: String
     var petImageUrl: String
@@ -25,5 +25,4 @@ struct Pet {
         }
         createdAt = Date.convertTimeStampToDate(timeInterval)
     }
-
 }

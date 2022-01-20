@@ -80,9 +80,7 @@ class TasksViewController: UIViewController {
 extension TasksViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
         let vc = storyboard?.instantiateViewController(identifier:"taskinfo") as! TaskInfoViewController
-
         navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -95,10 +93,8 @@ extension TasksViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
         cell.textLabel?.text = tasks[indexPath.row]
         return cell
     }
-    
 }
 

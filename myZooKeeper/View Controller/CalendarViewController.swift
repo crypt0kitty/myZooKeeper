@@ -86,6 +86,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate {
                     return
                 }
                 let reminderDocuments = documentSnapshot.documents
+
                 self.reminders = reminderDocuments.map({ snapshot in
                     return Reminder(snapshot: snapshot)
                 })
@@ -95,22 +96,9 @@ class CalendarViewController: UIViewController, UITableViewDelegate {
     }
     
     @objc private func refreshListData(_ sender: Any) {
-        getData { [weak self] success in
-            guard let strongSelf = self else { return }
-            DispatchQueue.main.async {
-                strongSelf.pullControl.endRefreshing()
-            }
-            if !success {
-                let alert = Alerts.getAlert(title: "Error", message: "Pull to refresh failed")
-                strongSelf.present(alert, animated: true, completion: nil)
-                return
-            }
-            DispatchQueue.main.async {
-                strongSelf.tableView.reloadData()
-            }
-        }
+        self.tableView.reloadData()
+        self.pullControl.endRefreshing()
     }
-    
     
     @IBAction func addButtonDidTap(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier:"AddReminderViewController") as! AddReminderViewController
@@ -120,14 +108,16 @@ class CalendarViewController: UIViewController, UITableViewDelegate {
 }
 
 extension CalendarViewController: RemindersDelegate {
-    
     func fetchData() {
         getReminders()
     }
 }
 
 extension CalendarViewController: UITableViewDataSource {
-    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {        
         return reminders.count
     }
@@ -135,8 +125,30 @@ extension CalendarViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderTableViewCell", for: indexPath)
         let reminder = reminders[indexPath.row]
-        cell.textLabel?.text = reminder.title + reminder.getFormattedDate()
-//        cell.detailTextLabel?.text = reminder.description
+        cell.textLabel?.text = reminder.title+": "+reminder.getFormattedDate()
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
+            let alertController = UIAlertController(title: "Success", message: "Pet reminder deleted successfully!", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "OK", style: .cancel, handler: { _ in
+            // Call completion handler to dismiss the action button
+                self.reminders.remove(at: indexPath.row)
+                self.tableView.deleteRows(at: [indexPath], with: .fade)
+            completionHandler(true)
+        })
+            alertController.addAction(alertAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+                                            
+        let editAction = UIContextualAction(style: .normal, title: "Edit") { (action, sourceView, completionHandler) in
+            completionHandler(true)
+        }
+
+        let swipeConfiguration = UISwipeActionsConfiguration(actions: [deleteAction, editAction])
+        editAction.backgroundColor = UIColor.systemYellow
+        return swipeConfiguration
     }
 }

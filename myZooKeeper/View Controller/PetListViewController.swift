@@ -19,6 +19,8 @@ class PetListViewController: UIViewController {
     var petList = [Pet]()
     var isLoading = false
     let pullControl = UIRefreshControl()
+    let cellReuseIdentifier = "cell"
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +65,6 @@ class PetListViewController: UIViewController {
                 strongSelf.spinner.isHidden = true
                 strongSelf.spinner.stopAnimating()
             }
-            
         }
     }
     
@@ -73,9 +74,7 @@ class PetListViewController: UIViewController {
             print("Error fetching pet list! May be empty list.")
             return
         }
-        
         let petDocuments = documentSnapshot.documents
-        
         petList = petDocuments.compactMap({ snapshot in
             Pet(snapshot: snapshot)
         })
@@ -83,7 +82,6 @@ class PetListViewController: UIViewController {
         petList.sort { firstPet, secondPet in
             return firstPet.createdAt > secondPet.createdAt
         }
-        
         self.tableView.reloadData()
     }
 }
@@ -108,7 +106,6 @@ extension PetListViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 270.0
+        return 265.0
     }
-    
 }

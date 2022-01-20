@@ -49,9 +49,7 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
                 }
                 alert.addAction(okAction)
                 self.present(alert, animated: true, completion: nil)
-               
          }
        }
-    }
-    
+    }    
 }
