@@ -53,7 +53,7 @@ class AddReminderViewController: UIViewController, UITextViewDelegate, UITextFie
         }
         
         let result = titleText.checkInput(greaterThan: 5, lessThan: 40)
-        print("the result is ")
+        print("the result is")
         print(result)
         
         if !titleText.checkInput(greaterThan: 5, lessThan: 40) {

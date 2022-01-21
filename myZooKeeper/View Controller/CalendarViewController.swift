@@ -61,7 +61,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate {
                     return Reminder(snapshot: snapshot)
                 })
                 strongSelf.reminders.sort { reminderOne, reminderTwo in
-                    reminderOne.reminderDate < reminderTwo.reminderDate
+                    reminderOne.reminderDate > reminderTwo.reminderDate
                 }
                 DispatchQueue.main.async {
                     strongSelf.tableView.reloadData()
@@ -125,7 +125,7 @@ extension CalendarViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReminderTableViewCell", for: indexPath)
         let reminder = reminders[indexPath.row]
-        cell.textLabel?.text = reminder.title+": "+reminder.getFormattedDate()
+        cell.textLabel?.text = reminder.title + ": " + reminder.getFormattedDate()
         return cell
     }
 

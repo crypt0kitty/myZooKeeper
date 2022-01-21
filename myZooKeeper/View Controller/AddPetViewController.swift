@@ -67,7 +67,7 @@ class AddPetViewController: UIViewController {
                     /*
                      Add created At
                      */
-                    "createdAt": Date().timeIntervalSince1970
+                    "createdAt":Date().timeIntervalSince1970
                 ]) { err in
                     DispatchQueue.main.async {
                         self.saveButton.isEnabled = true
