@@ -26,6 +26,7 @@ class AddPetViewController: UIViewController {
         nameTextField.delegate = self
         weightTextField.delegate = self
         navigationController?.navigationBar.tintColor = .white
+        nameTextField.adjustsFontSizeToFitWidth = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -125,11 +126,11 @@ class AddPetViewController: UIViewController {
     }
     
     func uploadImage(image: UIImage, completion: @escaping ((_ url: URL?) -> ())) {
-        let storageRef = Storage.storage().reference().child("petImages").child("\(Auth.auth().currentUser!.uid)").child("\(UUID().uuidString).png")
+        let storageRef = Storage.storage().reference().child("petImages").child("\(Auth.auth().currentUser!.uid)").child("\(UUID().uuidString).jpeg")
         let imageData = image.jpegData(compressionQuality: 0.1)
 
         let metadata = StorageMetadata()
-        metadata.contentType = "image/png"
+        metadata.contentType = "image/jpeg"
         storageRef.putData((imageData ?? imageData)!, metadata: metadata) { (url, error) in
             if error == nil {
                 storageRef.downloadURL { (url, error) in
