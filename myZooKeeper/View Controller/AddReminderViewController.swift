@@ -52,10 +52,6 @@ class AddReminderViewController: UIViewController, UITextViewDelegate, UITextFie
             return
         }
         
-        let result = titleText.checkInput(greaterThan: 5, lessThan: 40)
-        print("the result is")
-        print(result)
-        
         if !titleText.checkInput(greaterThan: 5, lessThan: 40) {
             presentAlert(title: "Title Too Long or Short", message: "Title must be 5 to 40 characters long")
             return

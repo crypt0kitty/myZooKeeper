@@ -37,6 +37,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate {
     }
     
     func getReminders() {
+        
         spinner.isHidden = false
         spinner.startAnimating()
         Firestore.firestore().collection("reminders").getDocuments { [weak self] (snapshot, error) in
@@ -74,6 +75,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate {
     }
     
     func getData(completion: @escaping ((_ success: Bool) -> Void)) {
+        
         Firestore.firestore().collection("reminders").getDocuments { (snapshot, error) in
             if self.spinner.isAnimating {
                 self.spinner.isHidden = true
