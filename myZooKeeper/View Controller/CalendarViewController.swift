@@ -56,12 +56,15 @@ class CalendarViewController: UIViewController, UITableViewDelegate {
                     print("Error fetching reminders list! May be empty list.")
                     return
                 }
+                
                 let reminderDocuments = documentSnapshot.documents
                 strongSelf.reminders = reminderDocuments.map({ snapshot in
                     return Reminder(snapshot: snapshot)
                 })
+                
                 strongSelf.reminders.sort { reminderOne, reminderTwo in
                     reminderOne.reminderDate > reminderTwo.reminderDate
+
                 }
                 DispatchQueue.main.async {
                     strongSelf.tableView.reloadData()
@@ -89,6 +92,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate {
 
                 self.reminders = reminderDocuments.map({ snapshot in
                     return Reminder(snapshot: snapshot)
+
                 })
                 completion(true)
             }
@@ -117,7 +121,7 @@ extension CalendarViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-
+  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {        
         return reminders.count
     }
